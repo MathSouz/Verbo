@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".login.LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="32dp"
+    android:background="@color/colorPrimaryDark">
+
+    <EditText
+        android:id="@+id/email_input"
+        style="@style/TextEdit"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:drawableStart="@drawable/ic_baseline_alternate_email_24"
+        android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:layout_marginVertical="2dp"/>
+
+    <EditText
+        android:id="@+id/password_input"
+        style="@style/TextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Senha"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:layout_marginVertical="2dp"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/ButtonFilled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Entrar"/>
+
+    <Button
+        style="@style/ButtonText"
+        android:id="@+id/back_to_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_baseline_navigate_next_24"
+        android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+        android:textSize="12sp"
+        android:text="Não tenho registro!"/>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="32dp"
+    android:background="@color/colorPrimaryDark">
+
+    <EditText
+        style="@style/TextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nome_completo"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:layout_marginVertical="2dp"
+        android:singleLine="true"/>
+
+    <EditText
+        style="@style/TextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:drawableStart="@drawable/ic_baseline_alternate_email_24"
+        android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:layout_marginVertical="2dp"
+        android:singleLine="true"/>
+
+    <EditText
+        style="@style/TextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:layout_marginVertical="2dp"
+        android:singleLine="true"/>
+
+    <EditText
+        style="@style/TextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirme_a_senha"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:layout_marginVertical="2dp"/>
+
+    <Button
+        style="@style/ButtonFilled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Registrar"/>
+
+    <Button
+        style="@style/ButtonText"
+        android:id="@+id/to_register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_navigate_before_24"
+        android:drawableLeft="@drawable/ic_baseline_navigate_before_24"
+        android:textSize="12sp"
+        android:text="Voltar para a tela de login"/>
+
+</LinearLayout>
